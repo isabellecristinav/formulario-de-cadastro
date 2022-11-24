@@ -8,12 +8,47 @@
     <title>Formulário de Cadastro</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1> Cadastro </h1>
     Nome: <br><input type="text" id="nome">
     Sobrenome: <input type="text" id="sobrenome"> <br>
     E-mail: <input type="email" id="email"> <br>
     Senha: <input type="password" id="senha"> <br>
+    Confirmação de Senha: <input type="password" id="confirmacao"><br>
+    Data de Nascimento: <input type="date" id="data"><br>
+    Endereço: <input type="text" id="endereco"><br>
+    Número: <input type="number" id="numero"><br>
+    Cidade: <input type="text" id="cidade"><br>
+    Estado: <select id="estado">
+        <option value="">AC</option>
+        <option value="">AL</option>
+        <option value="">AP</option>
+        <option value="">AM</option>
+        <option value="">BA</option>
+        <option value="">CE</option>
+        <option value="">DF</option>
+        <option value="">ES</option>
+        <option value="">GO</option>
+        <option value="">MA</option>
+        <option value="">MT</option>
+        <option value="">MS</option>
+        <option value="">MG</option>
+        <option value="">PA</option>
+        <option value="">PB</option>
+        <option value="">PR</option>
+        <option value="">PE</option>
+        <option value="">PI</option>
+        <option value="">RJ</option>
+        <option value="">RN</option>
+        <option value="">RS</option>
+        <option value="">RO</option>
+        <option value="">RR</option>
+        <option value="">SC</option>
+        <option value="">SP</option>
+        <option value="">SE</option>
+        <option value="">TO</option>
+    </select>
     <button type="button" onclick="Salvar()">Salvar</button>
     <table>
         <thead>
@@ -21,6 +56,11 @@
                 <th>Nome</th>
                 <th>sobrenome</th>
                 <th>Email</th>
+                <th>Data de Nascimento</th>
+                <th>Endereço</th>
+                <th>Número</th>
+                <th>Cidade</th>
+                <th>Estado</th>
             </tr>
         </thead>
         <tbody id="clientes">
