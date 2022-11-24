@@ -8,19 +8,24 @@
     <title>Formulário de Cadastro</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <h1> Cadastro </h1>
     Nome: <br><input type="text" id="nome">
     Sobrenome: <input type="text" id="sobrenome"> <br>
+    E-mail: <input type="email" id="email"> <br>
+    Senha: <input type="password" id="senha"> <br>
     <button type="button" onclick="Salvar()">Salvar</button>
     <table>
         <thead>
             <tr>
                 <th>Nome</th>
                 <th>sobrenome</th>
+                <th>Email</th>
             </tr>
         </thead>
+        <tbody id="clientes">
+
+        </tbody>
     </table>
 
     <script src="app.js"></script>
